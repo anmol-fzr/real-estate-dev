@@ -54,9 +54,10 @@ export default function Reviews() {
                 <h2 className="h2 section-title ">
                     Features
                 </h2>
+                {/* style={{ width: '375px', minWidth: '375px', maxWidth: '375px' }}  */}
                 <div className='flex flex-wrap items-center justify-between w-full pb-4 mx-auto gap-y-6 scroll-smooth ' >
                     {appreciations.map(({ image, text }) => (
-                        <div key={text} style={{ width: '375px', minWidth: '375px', maxWidth: '375px' }} className="flex-1 flex-grow h-full space-y-4 break-inside-avoid rounded-xl transition-bottom bg-gray-50 active:scale-95 border-light/25 font-dm" >
+                        <div key={text} className="flex-1 w-full sm:!w-[375px] flex-grow h-full space-y-4 break-inside-avoid rounded-xl transition-bottom bg-gray-50 active:scale-95 border-light/25 font-dm" >
                             <article className="overflow-hidden !w-[375px] rounded-lg shadow-lg">
                                 <a href="#">
                                     <img loading="lazy" alt="Placeholder" className="block !w-[375px] h-[266px] object-cover" src={image} />

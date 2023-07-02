@@ -11,7 +11,7 @@ const features = [
 export default function About() {
     return (
         <section className="container about" id="about">
-            <div className="grid justify-between grid-cols-2 ">
+            <div className="grid justify-between grid-cols-1 gap-12 sm:grid-cols-2 ">
                 <figure className="about-banner">
                     <img src={aboutImage} className='rounded ' alt="House interior" />
                     {/* <img

@@ -5,7 +5,7 @@ export default function Footer({ openModal }) {
     return (
         <footer className="footer">
             <div className="footer-top">
-                <div className="container flex items-end ">
+                <div className="container flex flex-col items-end sm:flex-row ">
                     <div className="footer-brand">
                         <a href="#" className="logo">
                             <img src={logo} className='w-48' alt="logo" />

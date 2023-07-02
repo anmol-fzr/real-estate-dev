@@ -17,7 +17,7 @@ export default function Navbar({ openModal }) {
     return (
         <>
             <div className="sticky top-0 w-full mx-auto shadow bg-white backdrop-blur z-[5]" >
-                <nav className="flex items-center justify-between h-full max-w-screen-lg p-4 py-6 mx-auto text-black" >
+                <nav className="flex flex-col items-center justify-between h-full max-w-screen-lg gap-4 p-4 py-6 mx-auto text-black sm:flex-row" >
                     <ul>
                         <li>
                             <a href='#home' >
