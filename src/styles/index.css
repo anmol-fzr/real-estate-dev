@@ -336,6 +336,13 @@ a {
 
 /* .header-top-btn:is(:hover, :focus) { --orange-soda: CCF3A3; } */
 
+
+.appreciations::-webkit-scrollbar {
+    display: none;
+    scroll-behavior: smooth;
+}
+
+
 .header-bottom {
   background: var(--white);
   padding-block: 25px;
