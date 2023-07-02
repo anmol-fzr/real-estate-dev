@@ -1,6 +1,4 @@
-import { Link, Outlet } from "react-router-dom";
 import logo from "../../assets/logo.png"
-import pdf from "../../assets/brochure.pdf"
 
 const navigation = [
     {
@@ -9,19 +7,19 @@ const navigation = [
     },
     {
         text: 'Contact us',
-        to: '/contact-us'
+        to: '#contact'
     },
 ];
 
 export default function Navbar({ openModal }) {
     return (
         <>
-            <div className="sticky top-0 w-full mx-auto shadow bg-white backdrop-blur z-[5]" >
+            <div className="sticky top-12 w-full mx-auto shadow bg-white backdrop-blur z-[5]" >
                 <nav className="flex items-center justify-between max-w-screen-lg p-4 py-6 mx-auto text-black" >
                     <ul>
                         <li>
                             <a href='#home' >
-                                <img src={logo} className="w-20" alt="logo" />
+                                <img src={logo} className="w-28" alt="logo" />
                             </a>
                         </li>
                     </ul>
@@ -38,8 +36,7 @@ export default function Navbar({ openModal }) {
                         </li>
                     </ul>
                 </nav>
-            </div>
-            <Outlet />
+            </div> 
         </>
     );
 }

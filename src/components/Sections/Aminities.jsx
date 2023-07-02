@@ -68,7 +68,7 @@ export default function Aminities() {
     return (
         <section className="features">
             <div className="container">
-                <h2 className="h2 section-title">Our Aminities</h2>
+                <h2 className="h2 section-title">Our Amenities</h2>
                 <ul className="features-list">
                     {amenties.map(({ icon, text }) => (
                         <li key={text} >
