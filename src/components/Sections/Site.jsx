@@ -70,7 +70,7 @@ export default function Site() {
                     <div className='p-4 -ml-8 bg-white rounded-full aspect-square' >
                         <NextArrow onClick={nextSlide} />
                     </div>
-                    <div className='p-4 -mr-1 bg-white rounded-fulla aspect-square' >
+                    <div className='p-4 -mr-1 bg-white rounded-full aspect-square' >
                         <PrevArrow onClick={prevSlide} />
                     </div>
                 </div>
