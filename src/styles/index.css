@@ -48,10 +48,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-<<<<<<< HEAD
   transition: all 0.3s ease-in-out;
-=======
->>>>>>> 0149959f9030f31351005e71c87dfef85fe3107c
 }
 
 li {
@@ -118,12 +115,9 @@ body {
 .container {
   padding-inline: 15px;
 }
-<<<<<<< HEAD
 .features.container {
   padding-inline: 0;
 }
-=======
->>>>>>> 0149959f9030f31351005e71c87dfef85fe3107c
 
 button,
 a {

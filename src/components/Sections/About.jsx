@@ -10,17 +10,10 @@ const features = [
 
 export default function About() {
     return (
-<<<<<<< HEAD
         <section className="container about" id="about">
             <div className="grid justify-between grid-cols-2 ">
                 <figure className="about-banner">
                     <img src={aboutImage} className='rounded ' alt="House interior" />
-=======
-        <section className="about max-w-screen-lg mx-auto w-full" id="about">
-            <div className="grid grid-cols-2 justify-between ">
-                <figure className="about-banner">
-                    <img src={aboutImage} className=' rounded ' alt="House interior" />
->>>>>>> 0149959f9030f31351005e71c87dfef85fe3107c
                     {/* <img
                         src="./assets/images/about-banner-2.jpg"
                         alt="House interior"
