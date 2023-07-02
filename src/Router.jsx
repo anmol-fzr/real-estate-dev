@@ -13,11 +13,16 @@ export default function Router() {
     setModal(true)
   }
 
+  function closeModal() {
+    setModal(false)
+  }
+
+
   return (
     <>
       <Navbar {...{ modal, openModal }} />
-      <Home />
-      <Modal open={modal} />
+      <Home {...{ openModal }} />
+      <Modal open={modal} close={closeModal} />
     </>
   )
 }

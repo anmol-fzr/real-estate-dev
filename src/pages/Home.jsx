@@ -10,12 +10,12 @@ import layout from "../assets/images/layout/layout.webp"
 import Modal from '../components/Modal'
 
 
-export default function Home() {
+export default function Home({ openModal }) {
     const [ open, setOpen ] = useState(false)
     return (
         <main>
             <article>
-                <Hero />
+                <Hero {...{ openModal }} />
                 <About />
                 {/* <section className="service" id="service">
                     <div className="container">

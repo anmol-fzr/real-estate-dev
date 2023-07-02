@@ -1,7 +1,7 @@
 import React from 'react'
 import homeModel from "../../assets/hero-banner.png"
 
-export default function Hero() {
+export default function Hero({ openModal }) {
     return (
         <section className="hero" id="home">
             <div className="container">
@@ -10,12 +10,12 @@ export default function Hero() {
                                 <ion-icon name="home" />
                                 <span>Real Estate Agency</span>
                             </p> */}
-                    <h2 className="h1 hero-title capitalize ">residential plots available near Jewar international Airport</h2>
+                    <h2 className="capitalize h1 hero-title ">residential plots available near Jewar international Airport</h2>
                     {/* <p className="hero-text">
                                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
                                 eiusmod tempor incididunt ut labore.
                             </p> */}
-                    <button className="btn">Make An Enquiry</button>
+                    <button onClick={openModal} className="btn">Make An Enquiry</button>
                 </div>
                 <figure className="hero-banner">
                     <img

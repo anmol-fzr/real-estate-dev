@@ -2,8 +2,10 @@ export default function Input({ register, type, name, placeholder, error }) {
     return (
         <div className="space-y-1" >
             <label htmlFor={name} className="capitalize" >{name}</label>
-            <input id={name} {...register(name)} {...{ type, name, placeholder }} className="w-full h-10 px-4 font-thin transition-all duration-200 ease-in-out border-2 border-gray-300 rounded-md outline-none placeholder:capitalize peer bg-gray-50 drop-shadow-sm focus:bg-white focus:border-primary/50" />
-            {error && <p className='text-sm text-red-500' >{error}</p>}
+            <input id={name} {...register(name)} {...{ type, name, placeholder }}
+                className="w-full px-8 py-4 text-sm font-medium placeholder-gray-500 bg-gray-100 border border-gray-200 rounded-lg ouline-none focus:ouline-none placeholder:capitalize focus:border-gray-400 focus:bg-white"
+            />
+            {error && <p className='text-sm text-red-500 capitalize' >{error}</p>}
         </div>
     )
 }
