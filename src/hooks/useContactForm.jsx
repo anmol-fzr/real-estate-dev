@@ -7,7 +7,7 @@ import pdf from "../assets/brochure.pdf"
 import config from "../config/emailjs.config"
 
 export default function useContactForm({ close }) {
-    const { register, handleSubmit, formState: { errors }, } = useForm({
+    const { register, handleSubmit, formState: { errors }, reset } = useForm({
         resolver: yupResolver(schema)
     })
 
@@ -32,9 +32,7 @@ export default function useContactForm({ close }) {
     };
 
     function onSubmit(data) {
-        // console.log(data)
-        // close()
-        // handleDownload()
+        close()
         console.clear()
         if (window.Email) {
             const obj = config(data)
@@ -43,8 +41,13 @@ export default function useContactForm({ close }) {
             }).catch((err) => {
                 console.log(err)
             })
-            console.log("Email Sent")
         }
+        handleDownload()
+        reset({
+            name: '',
+            email: '',
+            phone: ''
+        })
     }
 
     return { register, handleSubmit, errors, onSubmit }
