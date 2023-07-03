@@ -1,5 +1,4 @@
 import { useRef } from 'react'
-import "@splidejs/splide/dist/css/splide.min.css"
 import Arrow from "../Arrow"
 import image1 from "../../assets/images/site/1.jpeg"
 import image2 from "../../assets/images/site/2.jpeg"
