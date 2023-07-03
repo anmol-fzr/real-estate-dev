@@ -2,7 +2,9 @@ import { useForm } from "react-hook-form"
 import { yupResolver } from "@hookform/resolvers/yup"
 import schema from "../schema"
 
+
 import pdf from "../assets/brochure.pdf"
+import config from "../config/emailjs.config"
 
 export default function useContactForm({ close }) {
     const { register, handleSubmit, formState: { errors }, } = useForm({
@@ -10,18 +12,17 @@ export default function useContactForm({ close }) {
     })
 
 
-    const config = {
-        // Username: 'ainsa2279@gmail.com',
-        // Password: '25D31BFF6A21E6CC1F605159BB761952ECB7',
-        // Host: 'smtp.elasticemail.com',
-        // Port: '2525',
-        SecureToken: "1844a482-ec82-424a-8150-924ece67f0fa",
-
-        From: 'ainsa2279@gmail.com',
-        To: "ainsa2279@gmail.com",
-        Subject: "This is the subject",
-        Body: "And this is the body"
-    }
+    // const config = {
+    //     SecureToken: "baec5015-261c-4795-b770-c446aba63a4c",
+    //     From: 'risinginfranoida@gmail.com',
+    //     To: "ainsa2279@gmail.com",
+    //     Subject: `Lead Generated on Vimaan Vihar at ${new Date().toGMTString().slice(0, 22)} `,
+    //     Body: `A New Lead Generated on Vimaan Vihar at ${new Date().toGMTString().slice(0, 22)}.
+    //     name:${name},
+    //     email:${email},
+    //     phone:${phone},
+    //     `
+    // }
 
     const handleDownload = () => {
         const link = document.createElement('a');
@@ -30,13 +31,14 @@ export default function useContactForm({ close }) {
         link.click();
     };
 
-
     function onSubmit(data) {
         // console.log(data)
         // close()
         // handleDownload()
+        console.clear()
         if (window.Email) {
-            window.Email.send(config).then(res => {
+            const obj = config(data)
+            window.Email.send(obj).then(res => {
                 console.log(res)
             }).catch((err) => {
                 console.log(err)

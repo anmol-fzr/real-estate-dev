@@ -25,7 +25,7 @@ export default function About() {
                         {/* The Leading Real Estate Rental Marketplace. */}
                         Vimaan vihar
                     </h2>
-                    <p className="about-text">
+                    <p className="text-[#5d737e] text-xl mb-8 ">
                         Welcome to the ideal residential plot near the jewar international airport! Nestled in a prime location, this plot offers a unique opportunity for those seeking convenience, connectivity, and a tranquil living environment. With its close proximity to the airport, you'll experience the benefits of easy travel access while enjoying the comfort of a residential oasis.
                     </p>
                     {/* <ul className="about-list">
