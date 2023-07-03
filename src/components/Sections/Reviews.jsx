@@ -57,9 +57,9 @@ export default function Reviews() {
                 <div className='flex flex-wrap items-center justify-between w-full pb-4 mx-auto gap-y-6 scroll-smooth ' >
                     {appreciations.map(({ image, text }) => (
                         <div key={text} className=" w-fit sm:!w-[375px] mx-auto  h-full space-y-4 break-inside-avoid rounded-xl transition-bottom bg-gray-50 active:scale-95 border-light/25 font-dm" >
-                            <article className="overflow-hidden !w-[375px] rounded-lg shadow-lg">
+                            <article className="overflow-hidden sm:!w-[375px] rounded-lg shadow-lg">
                                 <a href="#">
-                                    <img loading='lazy' alt="Placeholder" className="block !w-[375px] h-[266px] object-cover" src={image} />
+                                    <img loading='lazy' alt="Placeholder" className="block sm:!w-[375px] h-[266px] object-cover" src={image} />
                                 </a>
                                 <header className="flex items-center justify-between p-2 leading-tight md:p-4">
                                     <h1 className="text-lg">

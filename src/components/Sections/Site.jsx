@@ -66,11 +66,11 @@ export default function Site() {
                     ))} 
                 </ul>
                 <div className={`flex absolute  w-full justify-between  top-1/2 translate-y-1/2 `} >
-                    <div className='p-4 -ml-8 bg-white rounded-full aspect-square' >
-                        <NextArrow onClick={nextSlide} />
-                    </div>
-                    <div className='p-4 -mr-1 bg-white rounded-full aspect-square' >
+                    <div className='p-4 -ml-3 bg-white rounded-full md:-ml-8 aspect-square' >
                         <PrevArrow onClick={prevSlide} />
+                    </div>
+                    <div className='p-4 mr-4 bg-white rounded-full md:-mr-1 aspect-square' >
+                        <NextArrow onClick={nextSlide} />
                     </div>
                 </div>
             </div>
@@ -84,14 +84,14 @@ export default function Site() {
 function NextArrow({ onClick }) {
     return (
         <button name='next' aria-label='next' onClick={onClick} className={`cursor-pointer`} >
-            <Arrow />
+            <Arrow className={` rotate-180`} />
         </button>
     )
 }
 function PrevArrow({ onClick }) {
     return (
         <button name='prev' aria-label='prev' onClick={onClick} className={`cursor-pointer`} >
-            <Arrow className={` rotate-180`} />
+            <Arrow />
         </button>
     )
 }

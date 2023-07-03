@@ -25,11 +25,11 @@ export default function Router() {
       <Header />
       <Navbar {...{ modal, openModal }} />
       <Home {...{ openModal }} />
-      {/*<Footer  {...{ openModal }} />
+      <Footer  {...{ openModal }} />
 
       <Wa />
       <Call />
-      <Modal open={modal} close={closeModal} /> */}
+      <Modal open={modal} close={closeModal} />
     </>
   )
 }
