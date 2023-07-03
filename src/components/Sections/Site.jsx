@@ -1,9 +1,9 @@
 import { useRef } from 'react'
 import Arrow from "../Arrow"
-import image1 from "../../assets/images/site/1.jpeg"
-import image2 from "../../assets/images/site/2.jpeg"
-import image3 from "../../assets/images/site/3.jpeg"
-import image4 from "../../assets/images/site/4.jpeg"
+import image1 from "../../assets/images/site/1.jpg"
+import image2 from "../../assets/images/site/2.jpg"
+import image3 from "../../assets/images/site/3.webp"
+import image4 from "../../assets/images/site/4.jpg"
 import image5 from "../../assets/images/site/5.jpeg"
 import image6 from "../../assets/images/site/6.jpeg"
 import image7 from "../../assets/images/site/7.jpeg"
@@ -58,7 +58,7 @@ export default function Site() {
                         <li key={i}>
                             <div className="relative rounded-md flex flex-col justify-center items-center gap-[10px] shadow-md " >
                                     <div className="">  
-                                        <img src={image} alt="" />
+                                        <img loading='lazy' src={image} alt="" />
                                     </div>
                             </div>
                         </li>

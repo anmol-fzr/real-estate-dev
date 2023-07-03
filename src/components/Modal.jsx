@@ -20,8 +20,6 @@ export const formInputs = [
     },
 ]
 
-
-
 export default function Modal({ open, close }) {
     const ref = useRef()
     const { register, errors, handleSubmit, onSubmit } = useContactForm({ close })
@@ -42,7 +40,6 @@ export default function Modal({ open, close }) {
     return (
         <div className=' fixed top-0 min-h-screen z-[60] min-w-[100vw]  bg-black/50 cursor-pointer '>
             <form onSubmit={handleSubmit(onSubmit)} className="fixed z-50 flex w-full gap-2 p-4 overflow-auto -translate-x-1/2 -translate-y-1/2 rounded-lg top-1/2 left-1/2 ">
-
                 <>
                     <div ref={ref} className="flex justify-center flex-1 w-full max-w-screen-sm mx-auto my-20 bg-white shadow sm:rounded-lg">
                         <div className="w-full p-6 sm:p-12">
@@ -60,10 +57,7 @@ export default function Modal({ open, close }) {
                             </div>
                         </div>
                     </div>
-
                 </>
-
-
             </form>
         </div>
     )

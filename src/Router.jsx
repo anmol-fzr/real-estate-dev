@@ -8,9 +8,6 @@ import Call from "./components/Call"
 import Header from "./components/Header/Header"
 import Footer from "./components/Footer/Footer"
 
-
-
-
 export default function Router() {
   const [ modal, setModal ] = useState(false)
 
@@ -28,11 +25,11 @@ export default function Router() {
       <Header />
       <Navbar {...{ modal, openModal }} />
       <Home {...{ openModal }} />
-      <Footer  {...{ openModal }} />
+      {/*<Footer  {...{ openModal }} />
 
       <Wa />
       <Call />
-      <Modal open={modal} close={closeModal} />
+      <Modal open={modal} close={closeModal} /> */}
     </>
   )
 }

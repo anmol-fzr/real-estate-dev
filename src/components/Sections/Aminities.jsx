@@ -1,5 +1,3 @@
-import React from 'react'
-
 import doc from "../../assets/svg/doc.svg"
 import clock from "../../assets/svg/clock.svg"
 import key from "../../assets/svg/key.svg"
@@ -11,7 +9,7 @@ import road from "../../assets/svg/road.svg"
 import wall from "../../assets/svg/wall.svg"
 import water from "../../assets/svg/tap-water.svg"
 import security from "../../assets/svg/policeman.svg"
-
+import light from "../../assets/svg/street-light.svg"
 
 const amenties = [
     {
@@ -31,8 +29,8 @@ const amenties = [
         text: 'loan available'
     },
     {
-        icon: money,
-        text: 'loan available'
+        icon: light,
+        text: 'street lights'
     },
     {
         icon: land,
@@ -73,15 +71,13 @@ export default function Aminities() {
                     {amenties.map(({ icon, text }) => (
                         <li key={text} >
                             <a href="#" className="features-card">
-                                <div className="card-icon">
-                                    {/* {icon} */}
-                                    <img src={icon} alt="" />
+                                <div className="card-icon"> 
+                                    <img loading='lazy' src={icon} alt="icon" />
                                 </div>
                                 <h3 className="capitalize card-title">{text}</h3>
                             </a>
                         </li>
                     ))}
-
                 </ul>
             </div>
         </section>
