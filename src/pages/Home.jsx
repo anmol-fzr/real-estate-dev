@@ -37,8 +37,8 @@ export default function Home({ openModal }) {
                 <section id='contact' className='container' >
                     <div className='flex flex-col max-w-screen-lg gap-2 mx-auto '  >
                         <h1 className="text-center capitalize h1 hero-title" >Contact us</h1>
-                        <div className="flex flex-col items-center justify-between flex-1 w-full gap-12 mx-auto mb-20 -mt-6 bg-white sm:flex-row sm:rounded-lg">
-                            <div className="w-full py-6 sm:w-8/12 sm:py-12">
+                        <div className="flex flex-col items-center justify-between flex-1 w-full gap-12 mx-auto mb-20 -mt-6 bg-white md:flex-row sm:rounded-lg">
+                            <div className="w-full py-6 md:w-8/12 md:py-12">
                                 <div className="flex flex-col items-center">
                                     <div className="flex-1 w-full mt-6">
                                         <form onSubmit={handleSubmit(onSubmit)} className="flex flex-col w-full gap-4 mx-auto ">
@@ -50,7 +50,7 @@ export default function Home({ openModal }) {
                                     </div>
                                 </div>
                             </div>
-                            <div className="flex flex-col w-full gap-6 py-6 sm:w-4/12 sm:py-12">
+                            <div className="flex flex-col w-full gap-6 py-6 md:w-4/12 md:py-12">
                                 <div className="flex flex-col items-start gap-2 ">
                                     <h3 className='text-xl font-medium uppercase ' >address</h3>
                                     <p className='flex items-start gap-2 font-medium '>
