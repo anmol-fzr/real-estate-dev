@@ -48,7 +48,7 @@ export default function Modal({ open, close }) {
                                 <div className="flex-1 w-full mt-6">
                                     <div className="flex flex-col w-full gap-4 mx-auto ">
                                         {formInputs.map(({ name, type, placeholder }) => (
-                                            <Input error={errors[ name ]?.message} {...{ name, type, placeholder, register }} />
+                                            <Input key={name} error={errors[ name ]?.message} {...{ name, type, placeholder, register }} />
                                         ))} 
                                         <button type='submit' className="mt-8 text-center btn">Submit</button>
 
