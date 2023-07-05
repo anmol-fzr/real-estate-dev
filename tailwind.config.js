@@ -9,6 +9,10 @@ export default {
       colors: {
         "secondary": "#CCF3A3",
         "primary": "#087040"
+      },
+      backgroundImage: {
+        "hero-lg": "url('/hero-lg.jpg')",
+        "hero-base": "url('/hero.jpg')"
       }
     },
   },

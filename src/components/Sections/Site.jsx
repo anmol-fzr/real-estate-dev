@@ -66,10 +66,10 @@ export default function Site() {
                     ))} 
                 </ul>
                 <div className={`flex absolute  w-full justify-between  top-1/2 translate-y-1/2 `} >
-                    <div className='p-4 -ml-3 bg-white rounded-full md:-ml-8 aspect-square' >
+                    <div className='p-4 -ml-3 bg-white rounded-full shadow-2xl md:-ml-8 aspect-square' >
                         <PrevArrow onClick={prevSlide} />
                     </div>
-                    <div className='p-4 mr-4 bg-white rounded-full md:-mr-1 aspect-square' >
+                    <div className='p-4 mr-4 bg-white rounded-full shadow-2xl md:-mr-1 aspect-square' >
                         <NextArrow onClick={nextSlide} />
                     </div>
                 </div>

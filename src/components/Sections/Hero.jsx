@@ -1,6 +1,7 @@
 export default function Hero({ openModal }) {
     return (
-        <section className="relative hero !bg-cover  z-[4]  !bg-no-repeat !bg-[url(https://i.imgur.com/FysKIN2.jpg)] " id="home">
+        // <section className="relative hero bg-cover  z-[4]  !bg-no-repeat !bg-[url(https://i.imgur.com/FysKIN2l.jpg)] md:!bg-[url(https://i.imgur.com/FysKIN2h.jpg)] " id="home">
+        <section className="relative hero   z-[4] !bg-cover    !bg-no-repeat  !bg-hero-lg " id="home">
             <div className="container pb-36 z-[5]"  >
                 <div className=" hero-content">
                     <h2 className="!text-white   capitalize h1 hero-title ">residential plots available near Jewar international Airport</h2>
