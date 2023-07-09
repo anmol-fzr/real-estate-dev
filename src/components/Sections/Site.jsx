@@ -1,4 +1,4 @@
-import { useRef } from 'react'
+import { useRef } from 'preact/hooks'
 import Arrow from "../Arrow"
 import image1 from "../../assets/images/site/1.jpg"
 import image2 from "../../assets/images/site/2.jpg"
@@ -58,7 +58,7 @@ export default function Site() {
                         <li key={i}>
                             <div className="relative rounded-md flex flex-col justify-center items-center gap-[10px] shadow-md " >
                                     <div className="">  
-                                        <img loading='lazy' src={image} alt="" />
+                                        <img loading='lazy' src={image} alt="actual site pic" />
                                     </div>
                             </div>
                         </li>

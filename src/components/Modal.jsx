@@ -1,6 +1,6 @@
 import Input from './Input'
 import useContactForm from '../hooks/useContactForm'
-import { useRef, useEffect } from 'react'
+import { useRef, useEffect } from "preact/hooks"
 
 export const formInputs = [
     {

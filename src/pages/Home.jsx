@@ -30,7 +30,7 @@ export default function Home({ openModal }) {
                     <div className='mb-20 mt-28 ' >
                         <h2 className="h2 section-title">Plan</h2>
                         <div >
-                            <img loading='lazy' src={layout} alt="" />
+                            <img loading='lazy' src={layout} alt="layout" />
                         </div>
                     </div>
                 </div>
