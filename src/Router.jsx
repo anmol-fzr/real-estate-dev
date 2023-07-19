@@ -25,13 +25,15 @@ export default function Router() {
 
   return (
     <>
+      <div className="absolute z-[9999]" >
+        <Wa />
+        <Call />
+      </div>
       <Header />
       <Navbar {...{ modal, openModal }} />
       <Home {...{ openModal }} />
       <Footer  {...{ openModal }} />
 
-      <Wa />
-      <Call />
       <Modal open={modal} close={closeModal} />
     </>
   )

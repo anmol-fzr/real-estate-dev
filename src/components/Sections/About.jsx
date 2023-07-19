@@ -5,7 +5,7 @@ export default function About() {
         <section className="container about" id="about">
             <div className="grid justify-between grid-cols-1 gap-12 sm:grid-cols-2 ">
                 <figure className="about-banner">
-                    <img loading='lazy' src={aboutImage} className='rounded ' alt="House interior" />
+                    <img loading='lazy' width={474} height={474} src={aboutImage} className='rounded ' alt="House interior" />
                 </figure>
                 <div className="">
                     <h2 className="h2 section-title ">

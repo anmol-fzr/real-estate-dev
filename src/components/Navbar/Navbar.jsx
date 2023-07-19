@@ -1,4 +1,4 @@
-import logo from "../../assets/logo.png"
+import logo from "../../assets/logo.webp"
 const navigation = [
     {
         text: 'About us',
@@ -17,7 +17,7 @@ export default function Navbar({ openModal }) {
                     <ul>
                         <li>
                             <a href='#home' >
-                                <img loading='lazy' src={logo} className="w-36" alt="logo" />
+                                <img loading='lazy' width={250} height={190} src={logo} className="w-36" alt="logo" />
                             </a>
                         </li>
                     </ul> 

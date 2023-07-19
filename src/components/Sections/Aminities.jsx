@@ -72,7 +72,7 @@ export default function Aminities() {
                         <li key={text} >
                             <a href="#" className="features-card">
                                 <div className="card-icon"> 
-                                    <img loading='lazy' src={icon} alt="icon" />
+                                    <img width={50} height={50} loading='lazy' src={icon} alt="icon" />
                                 </div>
                                 <h3 className="capitalize card-title">{text}</h3>
                             </a>

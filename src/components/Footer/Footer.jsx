@@ -1,4 +1,4 @@
-import logo from "../../assets/logo.png"
+import logo from "../../assets/logo.webp"
 import { PHONE, EMAIL } from "../../utils/constants"
 
 export default function Footer({ openModal }) {
@@ -8,7 +8,7 @@ export default function Footer({ openModal }) {
                 <div className="container flex flex-col items-end sm:flex-row ">
                     <div className="footer-brand">
                         <a href="#" className="logo">
-                            <img loading='lazy' src={logo} className='w-48' alt="logo" />
+                            <img loading='lazy' width={250} height={190} src={logo} className='w-48' alt="logo" />
                         </a>
                         <p className="section-text">
                             Residential Plots Available Near Jewar International Airport
