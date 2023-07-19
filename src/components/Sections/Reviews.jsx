@@ -1,12 +1,12 @@
 import metro from "../../assets/images/compressed/metro.webp"
 import airport from "../../assets/images/compressed/airport.webp"
-import movies from "../../assets/images/compressed/movies.webp"
-import study from "../../assets/images/compressed/study.webp"
+import movies from "../../assets/images/compressed/movies.jpg"
+import study from "../../assets/images/compressed/study.jpg"
 import hospital from "../../assets/images/compressed/hospital.webp"
 import club from "../../assets/images/compressed/club.webp"
 import cricket from "../../assets/images/compressed/circket.webp"
 import university from "../../assets/images/compressed/university.webp"
-import f1 from "../../assets/images/compressed/f1.webp"
+import f1 from "../../assets/images/compressed/f1.jpg"
 
 export const appreciations = [
     {
