@@ -5,7 +5,7 @@ export default function Hero() {
     // const openModal = useStore(state => state.openModal)
     return (
         // <section className="relative hero bg-cover  z-[4]  !bg-no-repeat !bg-[url(https://i.imgur.com/FysKIN2l.jpg)] md:!bg-[url(https://i.imgur.com/FysKIN2h.jpg)] " id="home">
-        <section className="relative hero z-[4] !bg-cover bg-black/90 !bg-no-repeat  !bg-hero-lg " id="home">
+        <section className="relative hero z-[4] !bg-cover !bg-center bg-black/90 !bg-no-repeat  !bg-hero-lg " id="home">
 
             <div className="container pb-36 z-[5]  !items-start"  >
                 {/* <div className="container pb-36 z-[5]"  > */}
