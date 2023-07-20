@@ -47,7 +47,7 @@ export const appreciations = [
     },
 ]
 
-export default function Reviews() { 
+export default function Features() { 
     return (
         <div className='container' >
             <div className='mb-20 mt-28 ' >

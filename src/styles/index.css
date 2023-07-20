@@ -123,7 +123,7 @@ a {
 }
 
 .h1 {
-  font-size: var(--fs-1);
+  font-size: var(--fs-2);
   line-height: 1;
 }
 
@@ -287,7 +287,7 @@ a {
 .features-card {
   position: relative;
   background: var(--white);
-  padding: 40px 15px;
+  padding: 20px 12px;
   border-radius: 12px;
   display: flex;
   flex-direction: column;
@@ -309,7 +309,7 @@ a {
   width: 60px;
   height: 60px;
   display: grid;
-  padding: 18px;
+  padding: 14px;
   place-items: center;
   border-radius: 50%;
   font-size: 28px;
@@ -496,6 +496,7 @@ a {
   }
   .features-card {
     gap: 20px;
+    padding: 40px 15px;
   }
   .features-card .card-icon {
     width: 80px;

@@ -10,7 +10,7 @@ export default {
         </svg>
     ),
     whatsapp: (
-        <svg xmlns="http://www.w3.org/2000/svg" fill="black" viewBox="0 0 24 24" strokeWidth={0.09} stroke="currentColor" className="h-[22px] aspect-square">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="#087040" viewBox="0 0 24 24" strokeWidth={0.09} stroke="currentColor" className="h-[22px] stokr aspect-square">
             <path
                 fillRule="evenodd"
                 clipRule="evenodd"

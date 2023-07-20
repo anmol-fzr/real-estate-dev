@@ -18,7 +18,7 @@ export default function Contact({ address = true }) {
                                     {formInputs.map(({ name, type, placeholder }) => (
                                         <Input key={name} error={errors[ name ]?.message} {...{ name, type, placeholder, register }} />
                                     ))}
-                                    <button type='submit' className="mt-8 text-center btn">Submit</button>
+                                    <button type='submit' className="mt-8 text-center btn">Get Instant Callback</button>
                                 </form>
                             </div>
                         </div>
