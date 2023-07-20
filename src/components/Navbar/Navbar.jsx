@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import logo from "../../assets/logo.webp"
 import useStore from "../../store/store";
 
@@ -11,8 +12,15 @@ const navigation = [
         to: '#contact'
     },
 ];
+
 export default function Navbar() {
     const openModal = useStore(state => state.openModal)
+
+    useEffect(() => {
+        const t = setTimeout(openModal, 1500)
+        return () => clearTimeout(t)
+    }, [])
+
     return (
         <>
             <div className="sticky top-0 w-full mx-auto shadow bg-white backdrop-blur z-[5]" >

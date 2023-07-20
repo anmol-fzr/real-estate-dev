@@ -68,10 +68,10 @@ export default function Aminities() {
             <div className="container">
                 <h2 className="h2 section-title">Our Amenities</h2>
                 <ul className="features-list">
-                    {amenties.map(({ icon, text }) => (
-                        <li key={text} >
-                            <a href="#" className="features-card">
-                                <div className="card-icon"> 
+                    {amenties.map(({ icon, text }, i) => (
+                        <li key={text}  >
+                            <a href="#" className={`  features-card `}>
+                                <div className={` ${i < 4 ? 'scale-125 !bg-[#ffe9e5] ' : ''}  card-icon`}> 
                                     <img width={50} height={50} loading='lazy' src={icon} alt="icon" />
                                 </div>
                                 <h3 className="capitalize card-title">{text}</h3>
