@@ -1,4 +1,6 @@
 import logo from "../../assets/logo.webp"
+import useStore from "../../store/store";
+
 const navigation = [
     {
         text: 'About us',
@@ -9,7 +11,8 @@ const navigation = [
         to: '#contact'
     },
 ];
-export default function Navbar({ openModal }) {
+export default function Navbar() {
+    const openModal = useStore(state => state.openModal)
     return (
         <>
             <div className="sticky top-0 w-full mx-auto shadow bg-white backdrop-blur z-[5]" >

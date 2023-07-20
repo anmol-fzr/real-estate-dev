@@ -1,5 +1,3 @@
-
-import { useState } from "preact/hooks"
 import Navbar from "./components/Navbar/Navbar"
 import Home from "./pages/Home"
 import Modal from "./components/Modal"
@@ -8,21 +6,7 @@ import Call from "./components/Call"
 import Header from "./components/Header/Header"
 import Footer from "./components/Footer/Footer"
 
-
-
-
-export default function Router() {
-  const [ modal, setModal ] = useState(false)
-
-  function openModal() {
-    setModal(true)
-  }
-
-  function closeModal() {
-    setModal(false)
-  }
-
-
+export default function Router() { 
   return (
     <>
       <div className="absolute z-[9999]" >
@@ -30,11 +14,10 @@ export default function Router() {
         <Call />
       </div>
       <Header />
-      <Navbar {...{ modal, openModal }} />
-      <Home {...{ openModal }} />
-      <Footer  {...{ openModal }} />
-
-      <Modal open={modal} close={closeModal} />
+      <Navbar />
+      <Home />
+      <Footer />
+      <Modal />
     </>
   )
 }

@@ -1,6 +1,7 @@
 import Input from './Input'
 import useContactForm from '../hooks/useContactForm'
 import { useRef, useEffect } from "preact/hooks"
+import useStore from '../store/store'
 
 export const formInputs = [
     {
@@ -20,23 +21,26 @@ export const formInputs = [
     },
 ]
 
-export default function Modal({ open, close }) {
+export default function Modal() {
     const ref = useRef()
+    const modal = useStore(state => state.modal)
+    const close = useStore(state => state.closeModal)
+
     const { register, errors, handleSubmit, onSubmit } = useContactForm({ close })
 
     useEffect(() => {
         const checkIfClickedOutside = (e) => {
-            if (open && ref.current && !ref.current.contains(e.target)) {
-                close();
+            if (ref.current && !ref.current.contains(e.target)) {
+                close()
             }
         };
 
         document.addEventListener("mousedown", checkIfClickedOutside);
         return () => document.removeEventListener("mousedown", checkIfClickedOutside);
-    }, [ open ]);
+    }, [ modal ]);
 
-    if (!open) return null
 
+    if (!modal) return null
     return (
         <div className=' fixed top-0 min-h-screen z-[60] min-w-[100vw]  bg-black/50 cursor-pointer '>
             <form onSubmit={handleSubmit(onSubmit)} className="fixed z-50 flex w-full gap-2 p-4 overflow-auto -translate-x-1/2 -translate-y-1/2 rounded-lg top-1/2 left-1/2 ">

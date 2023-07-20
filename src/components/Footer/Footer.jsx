@@ -1,7 +1,10 @@
 import logo from "../../assets/logo.webp"
+import useStore from "../../store/store"
+
 import { PHONE, EMAIL } from "../../utils/constants"
 
-export default function Footer({ openModal }) {
+export default function Footer() {
+    const openModal = useStore(state => state.openModal)
     return (
         <footer className="footer">
             <div className="footer-top">
