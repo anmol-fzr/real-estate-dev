@@ -33,10 +33,12 @@ export default function Contact({ address = true }) {
                                         <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
                                     </svg>
                                 </span>
+                                <a className=' text-primary/90' href="https://www.google.com/maps/place/Vimaan+Vihar/@28.0554557,77.5752634,15z/data=!4m6!3m5!1s0x39734ba97f714f29:0x357b0b60dd5a9eb6!8m2!3d28.0554557!4d77.5752634!16s%2Fg%2F11tsd98llk?entry=ttu">
                                 Vimaan Vihar, NH-334D, Main, Tappal, Uttar Pradesh 202165
+                                </a>
                             </p>
                         </div>
-                        <div className="flex flex-col items-start gap-2 ">
+                        {/* <div className="flex flex-col items-start gap-2 ">
                             <h3 className='text-xl font-medium uppercase' >Call us</h3>
                             <p className='flex items-start gap-2 font-medium'>
                                 <span className='' >
@@ -46,7 +48,7 @@ export default function Contact({ address = true }) {
                                 </span>
                                 <a className=' text-primary/90' href={`tel:+91${PHONE}`} >+91 {PHONE.slice(0, 5) + "-" + PHONE.slice(5)}</a>
                             </p>
-                        </div>
+                        </div> */}
                         <div className="flex flex-col items-start gap-2 ">
                             <h3 className='text-xl font-medium uppercase' >mail</h3>
                             <p className='flex items-start gap-2 font-medium'>

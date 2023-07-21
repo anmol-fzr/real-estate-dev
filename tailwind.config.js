@@ -11,7 +11,7 @@ export default {
         "primary": "#087040"
       },
       backgroundImage: {
-        "hero-lg": "url('/hero-lg.webp')"
+        "hero-lg": "url('/hero-lg.png')"
       }
     },
   },
