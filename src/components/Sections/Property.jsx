@@ -2,6 +2,8 @@ import image3 from "../../assets/images/site/3.webp"
 import image5 from "../../assets/images/site/5.webp"
 import image1 from "../../assets/images/site/1.webp"
 import useStore from "../../store/store"
+import H2 from "../Typo/H2"
+import Zoom from "react-reveal/Zoom"
 
 const amenties = [
     {
@@ -29,12 +31,15 @@ export default function Property() {
     return (
         <section className="features">
             <div className="container">
-                <h2 className="h2 section-title">Investment Oppurtunities</h2>
+                <H2>Investment Oppurtunities</H2>
                 <ul className="features-list">
                     {amenties.map(({ src,area,location,price }) => (
                         <div key={price} className="flex flex-col items-start justify-between !w-[350px]  bg-white shadow-md  group hover:shadow-lg rounded-xl">
                             <div className="relative">
+                                <Zoom>
+
                                 <img loading='lazy' width={350} height={262.5} className="rounded-t-xl" {...{src}} alt="actual site pic" />
+                                </Zoom>
                             </div>
                             <div className="w-full px-6 pb-6">
                                 <div className="flex flex-col w-full gap-2 py-4">

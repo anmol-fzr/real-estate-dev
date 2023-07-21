@@ -4,11 +4,13 @@ import Modal from "./components/Modal"
 import Wa from "./components/Wa"
 import Call from "./components/Call"
 // import Header from "./components/Header/Header"
+import Slide from "react-reveal/Slide"
+import Fade from "react-reveal/Fade"
 import Footer from "./components/Footer/Footer"
 import icons from "./shared/icons"
 import useStore from "./store/store"
 
-export default function Router() { 
+export default function Router() {
   const openModal = useStore(state => state.openModal)
   return (
     <>
@@ -29,16 +31,22 @@ export default function Router() {
 
         </div>
         <div className="" >
-        <Wa />
-        <Call />
+          <Wa />
+          <Call />
 
         </div>
       </div>
       {/* <Header /> */}
-      <Navbar />
+
+      <Slide top >
+        <Navbar />
+      </Slide>
       <Home />
-      <Footer />
+      <Slide bottom >
+        <Footer />
+      </Slide>
       <Modal />
     </>
   )
 }
+

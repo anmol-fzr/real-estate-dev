@@ -1,5 +1,7 @@
 // import useStore from "../../store/store"
+import Slide from "react-reveal/Slide"
 import Contact from "./Contact"
+
 
 export default function Hero() {
     // const openModal = useStore(state => state.openModal)
@@ -9,6 +11,8 @@ export default function Hero() {
 
             <div className="container pb-36 z-[5]  !items-start"  >
                 {/* <div className="container pb-36 z-[5]"  > */}
+                <Slide left >
+
                 <div className=" hero-content">
                     <h2 className="!text-white   capitalize h1 hero-title ">
                         Let your investment flies | Limited Residential Lands on sale Near Jewar International Airport
@@ -17,8 +21,11 @@ export default function Hero() {
                     {/* <h2 className=" capitalize text-3xl ml-2 mb-4 !text-white ">9990633353</h2> */}
                     {/* <button onClick={openModal} className="btn">Make An Enquiry</button> */}
                 </div>
+                </Slide>
 
+                <Slide right >
                 <Contact address={false} />
+                </Slide>
 
             </div>
 

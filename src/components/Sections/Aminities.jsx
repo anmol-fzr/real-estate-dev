@@ -10,6 +10,8 @@ import wall from "../../assets/svg/wall.svg"
 import water from "../../assets/svg/tap-water.svg"
 import security from "../../assets/svg/policeman.svg"
 import light from "../../assets/svg/street-light.svg"
+import Zoom from "react-reveal/Zoom"
+import H2 from "../Typo/H2"
 
 const amenties = [
     {
@@ -66,14 +68,16 @@ export default function Aminities() {
     return (
         <section className="features">
             <div className="container">
-                <h2 className="h2 section-title">Our Amenities</h2>
+                <H2>Our Amenities                </H2>
                 <ul className="features-list">
                     {amenties.map(({ icon, text }, i) => (
                         <li key={text}  >
                             <a href="#" className={`  features-card `}>
+                                <Zoom>
                                 <div className={` ${i < 4 ? 'scale-125 !bg-[#ffe9e5] ' : ''}  card-icon`}> 
                                     <img width={50} height={50} loading='lazy' src={icon} alt="icon" />
                                 </div>
+                                </Zoom>
                                 <h3 className="capitalize card-title">{text}</h3>
                             </a>
                         </li>

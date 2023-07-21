@@ -10,6 +10,8 @@ import image7 from "../../assets/images/site/7.webp"
 import image8 from "../../assets/images/site/8.webp"
 import image9 from "../../assets/images/site/9.webp"
 import image10 from "../../assets/images/site/10.webp"
+import H2 from "../Typo/H2"
+import { Zoom } from 'react-reveal'
 
 const width = 400 + 16;
 
@@ -51,13 +53,17 @@ export default function Site() {
     return (
         <section className="features">
             <div className="container relative ">
-                <h2 className="h2 section-title">Actual Site</h2>
+                <H2>Actual Site</H2>
                 <ul ref={slider} className="flex items-center gap-4 overflow-x-scroll overflow-y-hidden appreciations ">
                     {sitePics.map((image, i) => ( 
                         <li key={i} className='min-w-[400px]' >
                             <div className="relative rounded-md flex flex-col justify-center items-center gap-[10px] shadow-md " >
                                     <div className="">  
+                                    <Zoom>
                                     <img loading='lazy' width={400} height={300} src={image} alt="actual site pic" />
+
+                                    </Zoom>
+
                                     </div>
                             </div>
                         </li>
