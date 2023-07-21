@@ -63,10 +63,8 @@ export default function Features() {
                                 <Zoom>
                                 <a href="#">
                                     <img loading='lazy' alt="Placeholder" className="block sm:!w-[375px] h-[266px] object-cover" src={image} />
-                                </a>
-
+                                    </a>
                                 </Zoom>
-
                                 <header className="flex items-center justify-between p-2 leading-tight md:p-4">
                                     <h1 className="text-lg">
                                         <p className="text-black no-underline capitalize hover:underline" href="#">

@@ -9,7 +9,7 @@ export default function Contact({ address = true }) {
     return (
         <section id='contact' className='container' >
             <div className={`flex ${!address && "col-span-2"} flex-col w-full gap-2 `}  >
-                {address && <h2 className="text-center capitalize h1 hero-title" >Contact us</h2>}
+                {address && <h2 className="text-center capitalize h1 hero-title" >Connect with Our Experts</h2>}
                 <div className="flex flex-col items-center justify-between flex-1 w-full max-w-screen-lg gap-12 mx-auto mb-20 -mt-6 bg-white md:flex-row sm:rounded-lg">
                     <div className={` ${address ? "md:w-8/12 md:py-12" : "px-6  "} w-full py-6 `}>
                         <div className="flex flex-col items-center">

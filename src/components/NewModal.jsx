@@ -1,19 +1,9 @@
 import Input from './Input'
-import useContactForm from '../hooks/useContactForm'
 import { useRef, useEffect } from "preact/hooks"
 import useStore from '../store/store'
+import useModalForm from '../hooks/useModalForm'
 
 export const formInputs = [
-    {
-        name: 'name',
-        type: 'text',
-        placeholder: 'name',
-    },
-    {
-        name: 'email',
-        type: 'email',
-        placeholder: 'email',
-    },
     {
         name: 'phone',
         type: 'number',
@@ -21,12 +11,12 @@ export const formInputs = [
     },
 ]
 
-export default function Modal() {
+export default function NewModal() {
     const ref = useRef()
     const modal = useStore(state => state.modal)
     const close = useStore(state => state.closeModal)
 
-    const { register, errors, handleSubmit, onSubmit } = useContactForm({ close })
+    const { register, errors, handleSubmit, onSubmit } = useModalForm({ close })
 
     useEffect(() => {
         const checkIfClickedOutside = (e) => {
@@ -53,8 +43,8 @@ export default function Modal() {
                                     <div className="flex flex-col w-full gap-4 mx-auto ">
                                         {formInputs.map(({ name, type, placeholder }) => (
                                             <Input key={name} error={errors[ name ]?.message} {...{ name, type, placeholder, register }} />
-                                        ))} 
-                                        <button type='submit' className="mt-8 text-center btn">Submit</button>
+                                        ))}
+                                        <button type='submit' className="mt-8 text-center btn">Download Brochure</button>
                                     </div>
                                 </div>
                             </div>

@@ -9,6 +9,7 @@ import Fade from "react-reveal/Fade"
 import Footer from "./components/Footer/Footer"
 import icons from "./shared/icons"
 import useStore from "./store/store"
+import NewModal from "./components/NewModal"
 
 export default function Router() {
   const openModal = useStore(state => state.openModal)
@@ -45,7 +46,7 @@ export default function Router() {
       <Slide bottom >
         <Footer />
       </Slide>
-      <Modal />
+      <NewModal />
     </>
   )
 }

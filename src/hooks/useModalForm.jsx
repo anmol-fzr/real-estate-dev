@@ -1,14 +1,24 @@
 import { useForm } from "react-hook-form"
 import { yupResolver } from "@hookform/resolvers/yup"
-import schema from "../schema"
+import { object, number } from "yup";
 
+
+import pdf from "../assets/brochure.pdf"
 import config from "../config/emailjs.config"
 
-export default function useContactForm({ close }) {
+export default function useModalForm({ close }) {
     const { register, handleSubmit, formState: { errors }, reset } = useForm({
-        resolver: yupResolver(schema)
+        resolver: yupResolver(object().shape({
+            phone: number().typeError("Please Enter a Valid Phone number").test("len", "Must be exactly 10 digits", (val) => val.toString().length === 10).required()
+        }))
     })
 
+    const handleDownload = () => {
+        const link = document.createElement('a');
+        link.download = 'pdf';
+        link.href = pdf;
+        link.click();
+    };
 
     function onSubmit(data) {
         close()
@@ -20,7 +30,8 @@ export default function useContactForm({ close }) {
             }).catch((err) => {
                 console.log(err)
             })
-        } 
+        }
+        handleDownload()
         reset({
             name: '',
             email: '',
