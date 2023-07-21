@@ -14,11 +14,11 @@ export default function Router() {
     <>
       <div className="absolute z-[9999] !w-screen !overflow-hidden " >
         <div className="fixed bottom-0 flex items-center justify-center w-full gap-2 p-3  bg-secondary   !text-primary " >
-          <a href='tel:+919990633353' className="flex items-center gap-2 px-4 capitalize border-r-2 animate-bounce border-primary"  >
+          <a href='tel:+919990633353' className="flex items-center gap-2 px-4 capitalize border-r-2 border-primary"  >
             {icons.call}
             call
           </a>
-          <button onClick={openModal} className="flex items-center gap-2 px-4 capitalize animate-bounce "  >
+          <button onClick={openModal} className="flex items-center gap-2 px-4 capitalize "  >
             {icons.mail} Enquiry
           </button>
           <a href="https://wa.me/+919990633353" target='_blank' className="flex items-center gap-2 px-4 capitalize border-l-2 border-primary"  >
