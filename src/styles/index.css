@@ -81,8 +81,10 @@ html {
 }
 
 body {
-  background: var(--white);
+  background: red;
+  /* background: var(--white); */
   overflow-x: hidden;
+  width: 100vw;
 }
 
 ::-webkit-scrollbar {

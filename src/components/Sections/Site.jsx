@@ -51,10 +51,10 @@ export default function Site() {
     }
 
     return (
-        <section className="features">
+        <section className="features !max-w-[100vw] overlflow-x-hidden ">
             <div className="container relative ">
                 <H2>Actual Site</H2>
-                <ul ref={slider} className="flex items-center gap-4 overflow-x-scroll overflow-y-hidden appreciations ">
+                <ul ref={slider} style={{ maxWidth: '100vw' }} className="flex items-center gap-4 !overflow-x-auto overflow-y-hidden appreciations ">
                     {sitePics.map((image, i) => ( 
                         <li key={i} className='min-w-[400px]' >
                             <div className="relative rounded-md flex flex-col justify-center items-center gap-[10px] shadow-md " >
@@ -69,11 +69,11 @@ export default function Site() {
                         </li>
                     ))} 
                 </ul>
-                <div className={`flex absolute  w-full justify-between  top-1/2 translate-y-1/2 `} >
-                    <div className='p-4 -ml-3 bg-white rounded-full shadow-2xl md:-ml-8 aspect-square' >
+                <div className={`flex w-fit absolute !max-w-[100vw] mt-4  justify-between -translate-x-1/2 left-1/2 `} >
+                    <div className='p-4 bg-white rounded-full shadow-2xl aspect-square' >
                         <PrevArrow onClick={prevSlide} />
                     </div>
-                    <div className='p-4 mr-4 bg-white rounded-full shadow-2xl md:-mr-1 aspect-square' >
+                    <div className='p-4 bg-white rounded-full shadow-2xl aspect-square' >
                         <NextArrow onClick={nextSlide} />
                     </div>
                 </div>
