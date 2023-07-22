@@ -29,11 +29,11 @@ export default function Router() {
             {icons.whatsapp}  Whatsapp
           </a>
         </div>
-        <div className="" >
+        {/* <div className="" >
           <Wa />
           <Call />
 
-        </div>
+        </div> */}
       </div>
       {/* <Header /> */}
 
