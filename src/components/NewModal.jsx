@@ -11,9 +11,10 @@ export const formInputs = [
     },
 ]
 
-export default function NewModal() {
+export default function NewModal({ download = false }) {
     const ref = useRef()
     const modal = useStore(state => state.modal)
+    const setDownload = useStore(state => state.setDownload)
     const close = useStore(state => state.closeModal)
 
     const { register, errors, handleSubmit, onSubmit } = useModalForm({ close })
@@ -22,6 +23,7 @@ export default function NewModal() {
         const checkIfClickedOutside = (e) => {
             if (ref.current && !ref.current.contains(e.target)) {
                 close()
+                setDownload(false)
             }
         };
 
@@ -44,7 +46,7 @@ export default function NewModal() {
                                         {formInputs.map(({ name, type, placeholder }) => (
                                             <Input key={name} error={errors[ name ]?.message} {...{ name, type, placeholder, register }} />
                                         ))}
-                                        <button type='submit' className="mt-8 text-center btn">Download Brochure</button>
+                                        <button type='submit' className="mt-8 text-center btn">{download ? 'Download Brochure' : 'Send me Details'}</button>
                                     </div>
                                 </div>
                             </div>

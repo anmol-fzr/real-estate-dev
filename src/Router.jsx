@@ -13,6 +13,7 @@ import NewModal from "./components/NewModal"
 
 export default function Router() {
   const openModal = useStore(state => state.openModal)
+  const download = useStore(state => state.download)
   return (
     <>
       <div className="absolute z-[9999] !w-screen !overflow-hidden " >
@@ -43,7 +44,7 @@ export default function Router() {
       <Slide bottom >
         <Footer />
       </Slide>
-      <NewModal />
+      <NewModal  {...{ download }} />
     </>
   )
 }

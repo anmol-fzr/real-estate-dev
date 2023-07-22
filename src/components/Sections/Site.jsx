@@ -61,9 +61,7 @@ export default function Site() {
                                     <div className="">  
                                     <Zoom>
                                         <img loading='lazy' width={400} height={300} src={image} className='border-2 border-white rounded-md' alt="actual site pic" />
-
                                     </Zoom>
-
                                     </div>
                             </div>
                         </li>

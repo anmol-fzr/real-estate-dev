@@ -15,7 +15,7 @@ const navigation = [
 
 export default function Navbar() {
     const openModal = useStore(state => state.openModal)
-
+    const setDownload = useStore(state => state.setDownload)
     useEffect(() => {
         const t = setTimeout(openModal, 1500)
         return () => clearTimeout(t)
@@ -41,7 +41,10 @@ export default function Navbar() {
                             </li>
                         ))}
                         <li>
-                            <button onClick={openModal} className="capitalize"   >E Brochure</button>
+                            <button onClick={() => {
+                                openModal()
+                                setDownload(true)
+                            }} className="capitalize"   >E Brochure</button>
                         </li>
                     </ul>
                 </nav>
