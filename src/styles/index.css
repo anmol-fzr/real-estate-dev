@@ -119,7 +119,7 @@ a {
 .h1,
 .h2,
 .h3 {
-  color: var(--dark-jungle-green);
+  /* color: var(--dark-jungle-green); */
   font-family: var(--ff-poppins);
   line-height: 1.3;
 }
@@ -271,7 +271,7 @@ a {
 \*-----------------------------------*/
 
 .features {
-  background: var(--cultured-2);
+  /* background: var(--cultured-2); */
   padding-block: var(--section-padding);
 }
 
@@ -601,4 +601,11 @@ a {
   .footer-link-box {
     flex-basis: 700px;
   }
+}
+
+.image-bg::before{
+  content: 'befor contenr';
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0,0,0,0.2);
 }

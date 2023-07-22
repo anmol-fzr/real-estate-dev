@@ -30,7 +30,7 @@ export default function Property() {
     const openModal = useStore(state=>state.openModal)
     return (
         <section className="features">
-            <div className="container">
+            <div className="container !text-white   ">
                 <H2>Investment Oppurtunities</H2>
                 <ul className="features-list">
                     {amenties.map(({ src,area,location,price }) => (

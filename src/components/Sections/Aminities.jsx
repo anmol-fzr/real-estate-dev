@@ -68,7 +68,7 @@ const amenties = [
 export default function Aminities() {
     return (
         <section className="features">
-            <div className="container">
+            <div className="container !text-white ">
                 <H2>Our Amenities                </H2>
                 <ul className="features-list">
                     {amenties.map(({ icon, text }, i) => (

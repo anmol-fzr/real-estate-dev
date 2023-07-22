@@ -13,11 +13,12 @@ export default function About() {
                 </Slide>
                 <Slide right >
 
-                <div className="">
+                    <div className="!text-white">
                         <H2 >
                         Vimaan vihar
                         </H2>
-                    <p className="text-[#5d737e] text-xl mb-8 ">
+                        <p className="mb-8 text-xl text-gray-200 ">
+                            {/* <p className="text-[#5d737e] text-xl mb-8 "> */}
                         Welcome to the ideal residential plot near the jewar international airport! Nestled in a prime location, this plot offers a unique opportunity for those seeking convenience, connectivity, and a tranquil living environment. With its close proximity to the airport, you'll experience the benefits of easy travel access while enjoying the comfort of a residential oasis.
                     </p>
                 </div>

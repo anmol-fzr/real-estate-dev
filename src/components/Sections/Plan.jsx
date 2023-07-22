@@ -6,7 +6,7 @@ import Zoom from "react-reveal/Zoom"
 export default function Plan() {
     return (
         <div className="container">
-            <div className='mb-20 mt-28 ' >
+            <div className='mb-20 mt-28 !text-white' >
                 <H2>Plan</H2>
                 <div >
                     <Zoom>

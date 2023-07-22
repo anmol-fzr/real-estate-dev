@@ -1,13 +1,13 @@
-import aboutImage from "../../assets/about-banner-1.jpeg"
+
 import Slide from "react-reveal/Slide"
 import H2 from "../Typo/H2"
 
 export default function Airplane() {
     return (
-        <section className="container about" id="about">
-            <div className="grid justify-between grid-cols-1 gap-12 md:grid-cols-2 ">
-                <Slide left >
-                    <figure className="md:order-2 about-banner">
+        <section className="container about " id="about">
+            <div className="grid justify-between grid-cols-1 gap-12 lg:grid-cols-2 ">
+                <Slide right >
+                    <figure className="lg:order-2 about-banner">
                         {/* h-[315px] */}
                         <iframe
                             className="w-[90vw] max-w-[560px] aspect-video"
@@ -18,7 +18,7 @@ export default function Airplane() {
                         />
                     </figure>
                 </Slide>
-                <Slide right >
+                <Slide left >
 
                     <div className="">
                         <H2 >
