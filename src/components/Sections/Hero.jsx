@@ -18,7 +18,8 @@ export default function Hero() {
         <section className="relative hero pb-36 z-[4] !bg-cover !bg-center  !bg-no-repeat   " id="home">
 
             <p className="h1 hero-title text-center !mb-12 !text-white " >
-                Minimum size start 100Sq. Yards
+
+                Be a Proud Resident Near Asia's Biggest Airport
             </p>
             <div className="container  z-[5]  !items-start"  >
                 {/* <div className="container pb-36 z-[5]"  > */}
@@ -49,7 +50,7 @@ export default function Hero() {
                         ))}
                     </div>
                     <p className="text-2xl text-center !text-white " >
-                        Be a Proud Resident Near Asia's Biggest Airport
+                        Minimum size start 100Sq. Yards
                     </p>
                     <button onClick={openModal} className="btn" >I Want more Details </button>
                 </div>
