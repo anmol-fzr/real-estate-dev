@@ -1,25 +1,25 @@
-import image3 from "../../assets/images/site/3.webp"
-import image5 from "../../assets/images/site/5.webp"
-import image1 from "../../assets/images/site/1.webp"
+import image100 from "../../assets/images/site/100.webp"
+import image200 from "../../assets/images/site/200.webp"
+import image400 from "../../assets/images/site/400.webp"
 import useStore from "../../store/store"
 import H2 from "../Typo/H2"
 import Zoom from "react-reveal/Zoom"
 
 const amenties = [
     {
-        src: image3,
+        src: image100,
         area: '100 Square Yards',
         location: 'TAPPAL, NH-334D, UP - 202165',
         price: '₹20 LAKHS',
     }, 
     {
-        src: image5,
+        src: image200,
         area: '200 Square Yards',
         location: 'TAPPAL, NH-334D, UP - 202165',
         price: '₹40 LAKHS',
     }, 
     {
-        src: image1,
+        src: image400,
         area: '400 Square Yards',
         location: 'TAPPAL, NH-334D, UP - 202165',
         price: '₹60 LAKHS',
