@@ -26,7 +26,7 @@ export default function Hero() {
                 <Slide left >
 
                 <div className=" hero-content">
-                        <h2 className="!text-white   capitalize text-3xl ">
+                        <h2 className="!text-white   capitalize lg:text-3xl ">
                             Let your investment flies | Limited Residential Lands on sale Near Jewar International Airport | Airport Completes In End 2024 | Invest Now
                         </h2>
                 </div>
