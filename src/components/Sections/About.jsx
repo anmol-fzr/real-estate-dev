@@ -5,9 +5,8 @@ import H2 from "../Typo/H2"
 export default function About() {
     return (
         <section className="container about" id="about">
-            <div className="grid justify-between grid-cols-1 gap-12 sm:grid-cols-2 ">
-                <Slide left >  
-
+            <div className="grid justify-between grid-cols-1 gap-12 md:grid-cols-2 ">
+                <Slide left >
                 <figure className="about-banner">
                     <img loading='lazy' width={474} height={474} src={aboutImage} className='rounded ' alt="House interior" />
                 </figure>

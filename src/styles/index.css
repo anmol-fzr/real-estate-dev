@@ -81,8 +81,7 @@ html {
 }
 
 body {
-  background: red;
-  /* background: var(--white); */
+  background: var(--white);
   overflow-x: hidden;
   width: 100vw;
 }

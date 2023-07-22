@@ -1,9 +1,8 @@
 import Hero from '../components/Sections/Hero'
 import About from '../components/Sections/About'
+import Airplane from '../components/Sections/Airplane'
 import Features from '../components/Sections/Features'
 import Site from '../components/Sections/Site'
-
-
 import Aminities from "../components/Sections/Aminities"
 import Contact from '../components/Sections/Contact'
 import Property from '../components/Sections/Property'
@@ -23,6 +22,7 @@ export default function Home() {
             <article>
                 <Hero />
                 <About />
+                <Airplane />
                 <Property />
                 <Site />
                 <Aminities />
