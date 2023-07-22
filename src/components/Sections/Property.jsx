@@ -32,7 +32,8 @@ export default function Property() {
         <section className="features">
             <div className="container !text-white   ">
                 <H2>Investment Oppurtunities</H2>
-                <ul className="features-list">
+
+                <ul className="features-list !text-black ">
                     {amenties.map(({ src,area,location,price }) => (
                         <div key={price} className="flex flex-col items-start justify-between !w-[350px]  bg-white shadow-md  group hover:shadow-lg rounded-xl">
                             <div className="relative">
