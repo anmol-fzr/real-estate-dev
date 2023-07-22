@@ -25,21 +25,20 @@ export default function Home() {
                 </div>
                 <Hero />
                 <About />
-                <div className='bg-white' >
+                <div className='py-12 bg-white/60' >
                 <Airplane />
                 </div>
                 <Property />
-                <div className='bg-white' >
+                <div className='py-12 bg-white/60' >
 
                 <Site />
                 </div>
                 <Aminities />
-                <div className='bg-white' >
+                <div className='py-12 bg-white/60' >
                 <Features />
                 </div>
                 <Plan />
-                <div className='bg-white' >
-
+                <div className='py-12 bg-white/60' >
                 <Contact /> 
                 </div>
             </article>

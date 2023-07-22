@@ -8,7 +8,7 @@ export default function About() {
             <div className="grid justify-between grid-cols-1 gap-12 md:grid-cols-2 ">
                 <Slide left >
                 <figure className="about-banner">
-                    <img loading='lazy' width={474} height={474} src={aboutImage} className='rounded ' alt="House interior" />
+                        <img loading='lazy' width={474} height={474} src={aboutImage} className='border-2 border-white rounded ' alt="House interior" />
                 </figure>
                 </Slide>
                 <Slide right >

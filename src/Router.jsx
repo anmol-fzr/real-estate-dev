@@ -16,8 +16,8 @@ export default function Router() {
   return (
     <>
       <div className="absolute z-[9999] !w-screen !overflow-hidden " >
-        <div className="fixed bottom-0 flex flex-col sm:flex-row items-center justify-center w-full gap-2 p-3  bg-secondary   !text-primary " >
-          <a href='tel:+919990633353' className="flex items-center gap-2 px-4 capitalize "  >
+        <div className="fixed bottom-0 flex  divide-x divide-primary items-center justify-center w-full gap-2 p-3  bg-secondary   !text-primary " >
+          <a href='tel:+919990633353' className="flex items-center gap-2 px-4 capitalize border-r border-primary "  >
             {icons.call}
             call
           </a>
@@ -27,9 +27,6 @@ export default function Router() {
           <a href="https://wa.me/+919990633353" target='_blank' className="flex items-center gap-2 px-4 capitalize"  >
             {icons.whatsapp}  Whatsapp
           </a>
-
-
-
         </div>
         <div className="" >
           <Wa />

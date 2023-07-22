@@ -62,7 +62,7 @@ export default function Features() {
                             <article className="overflow-hidden sm:!w-[375px] rounded-lg shadow-lg">
                                 <Zoom>
                                 <a href="#">
-                                    <img loading='lazy' alt="Placeholder" className="block sm:!w-[375px] h-[266px] object-cover" src={image} />
+                                        <img loading='lazy' alt="Placeholder" className="block sm:!w-[375px] h-[266px] object-cover border-2 border-white rounded-t-xl " src={image} />
                                     </a>
                                 </Zoom>
                                 <header className="flex items-center justify-between p-2 leading-tight md:p-4">

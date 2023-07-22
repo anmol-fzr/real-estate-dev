@@ -60,7 +60,7 @@ export default function Site() {
                             <div className="relative rounded-md flex flex-col justify-center items-center gap-[10px] shadow-md " >
                                     <div className="">  
                                     <Zoom>
-                                    <img loading='lazy' width={400} height={300} src={image} alt="actual site pic" />
+                                        <img loading='lazy' width={400} height={300} src={image} className='border-2 border-white rounded-md' alt="actual site pic" />
 
                                     </Zoom>
 

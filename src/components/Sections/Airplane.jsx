@@ -24,7 +24,7 @@ export default function Airplane() {
                         <H2 >
                             Why Near Jewar Airport?
                         </H2>
-                        <p className="text-[#5d737e] text-xl mb-8 ">
+                        <p className="mb-8 text-xl text-gray-900 ">
                             Jewar International Airport will generate around 250,000 job opportunities within a few years of starting its operations. It will be the biggest airport in Asia and the fourth largest in the world. The airport covers an area of 5100 hectares (equivalent to 12355 acres) and currently has 6 runways. Being close to the airport means there will be a high demand for both commercial and residential properties, which could result in property values increasing over time and providing rental income possibilities.
                         </p>
                     </div>

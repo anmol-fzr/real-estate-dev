@@ -8,9 +8,9 @@ export default function Contact({ address = true }) {
     const { register, handleSubmit, onSubmit, errors } = useContactForm({ close: () => { } })
     return (
         <section id='contact' className='container' >
-            <div className={`flex ${!address && "col-span-2"} flex-col w-full gap-2 `}  >
+            <div className={`flex ${!address && "col-span-2"} flex-col w-full gap-2  `}  >
                 {address && <h2 className="text-center capitalize h1 hero-title" >Connect with Our Experts</h2>}
-                <div className="flex flex-col items-center justify-between flex-1 w-full max-w-screen-lg gap-12 mx-auto mb-20 -mt-6 bg-white/25 backdrop-blur-[1px] md:flex-row sm:rounded-lg">
+                <div className="flex flex-col items-strech justify-between flex-1 w-full max-w-screen-lg gap-12 mx-auto mb-20 -mt-6  backdrop-blur-[1px] md:flex-row sm:rounded-lg">
                     <div className={` ${address ? "md:w-8/12 md:py-12" : "px-6  "} w-full py-6 `}>
                         <div className="flex flex-col items-center">
                             <div className="flex-1 w-full mt-6">
@@ -24,6 +24,14 @@ export default function Contact({ address = true }) {
                         </div>
                     </div>
                     {address && <div className="flex flex-col w-full gap-6 py-6 md:w-4/12 md:py-12">
+                        <div>
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14083.94352597707!2d77.5752634!3d28.0554557!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39734ba97f714f29%3A0x357b0b60dd5a9eb6!2sVimaan%20Vihar!5e0!3m2!1sen!2sin!4v1690046487485!5m2!1sen!2sin"
+                                className='w-full h-48 '
+                                loading="lazy"
+                                referrerPolicy="no-referrer-when-downgrade"
+                            />
+                        </div>
                         <div className="flex flex-col items-start gap-2 ">
                             <h3 className='text-xl font-medium uppercase ' >address</h3>
                             <p className='flex items-start gap-2 font-medium '>

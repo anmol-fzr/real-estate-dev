@@ -39,7 +39,7 @@ export default function Property() {
                             <div className="relative">
                                 <Zoom>
 
-                                <img loading='lazy' width={350} height={262.5} className="rounded-t-xl" {...{src}} alt="actual site pic" />
+                                    <img loading='lazy' width={350} height={262.5} className="border-2 border-white rounded-t-xl" {...{ src }} alt="actual site pic" />
                                 </Zoom>
                             </div>
                             <div className="w-full px-6 pb-6">
