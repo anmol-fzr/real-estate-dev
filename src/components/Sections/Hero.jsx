@@ -17,7 +17,7 @@ export default function Hero() {
         // <section className="relative hero bg-cover  z-[4]  !bg-no-repeat !bg-[url(https://i.imgur.com/FysKIN2l.jpg)] md:!bg-[url(https://i.imgur.com/FysKIN2h.jpg)] " id="home">
         <section className="relative hero pb-36 z-[4] !bg-cover !bg-center  !bg-no-repeat   " id="home">
 
-            <p className="h1 hero-title text-center !mb-12 !text-white " >
+            <p className="h1 hero-title text-center !mb-12 -mt-12 !text-white " >
 
                 Be a Proud Resident Near Asia's Biggest Airport
             </p>
@@ -26,7 +26,7 @@ export default function Hero() {
                 <Slide left >
 
                 <div className=" hero-content">
-                    <h2 className="!text-white   capitalize h1 hero-title ">
+                        <h2 className="!text-white   capitalize text-3xl ">
                             Let your investment flies | Limited Residential Lands on sale Near Jewar International Airport | Airport Completes In End 2024 | Invest Now
                         </h2>
                 </div>
